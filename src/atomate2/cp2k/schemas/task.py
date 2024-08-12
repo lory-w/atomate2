@@ -297,6 +297,9 @@ class TaskDocument(StructureMetadata, MoleculeMetadata):
     additional_json: Optional[dict[str, Any]] = Field(
         None, description="Additional json loaded from the calculation directory"
     )
+    additional_fields: Optional[dict[str, Any]] = Field(
+        None, description="Additional fields added to the output document"
+    )
     schema: str = Field(
         __version__, description="Version of atomate2 used to create the document"
     )
@@ -398,6 +401,7 @@ class TaskDocument(StructureMetadata, MoleculeMetadata):
             "custodian": custodian,
             "orig_inputs": orig_inputs,
             "additional_json": additional_json,
+            "additional_fields": additional_fields,
             "icsd_id": icsd_id,
             "tags": tags,
             "author": author,
@@ -412,7 +416,7 @@ class TaskDocument(StructureMetadata, MoleculeMetadata):
         }
         doc = cls(**doc.dict())
         doc = doc.copy(update=data)
-        return doc.copy(update=additional_fields)
+        return doc
 
     @staticmethod
     def get_entry(

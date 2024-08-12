@@ -213,8 +213,8 @@ cp2k_input:
       potential: 85f8587c1765fc9afa85b5f130cec93f
     La:
       aux_basis: null
-      basis: null
-      potential: null
+      basis: 2e70b631b24ef81514abb2df322e8795
+      potential: d8908938138e5e6cc7fda94437f6a614
     Li:
       aux_basis: b7cf403abc1c0f50d459ee0d1b5e80c9
       basis: 2d9ba9b4926e0f622389e3395eabe191
@@ -269,8 +269,8 @@ cp2k_input:
       potential: ab32a0ed9df5b81afc9bb9ed8f289dd3
     Nd:
       aux_basis: null
-      basis: null
-      potential: null
+      basis: dbe2a98b3b18f592cb2ee57a7f8d1caf
+      potential: 7dfa6e72e3adbe2bd079968e575ce54e
     Ne:
       aux_basis: 46ad7c924a43d4ab5f88604f92b6e76b
       basis: cb7c9d7d2ce76faca00d069e4be24bd0
